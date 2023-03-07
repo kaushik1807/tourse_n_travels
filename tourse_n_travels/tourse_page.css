@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap');
+
+/* *********************************************************************navbar************************************************************************ */
+#navbar {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    background-color: rgb(152, 155, 155);
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a {
+    background-color: none;
+    color: black;
+    text-transform: capitalize;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+#navbar-toggle {
+    display: none;
+}
+
+/* ******************************************************************* welcome section *********************************************************************/
+.h1-div {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 820px;
+    margin-left: 180px;
+    background-color: #e0e0e0;
+}
+
+.div-main {
+    height: 100%;
+    width: 100%;
+    max-height: 270px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px;
+}
+
+.div-main:hover img {
+    transform: scale(1.2);
+    transition: 1s all ease-in-out;
+    overflow: hidden;
+}
+
+.div-main:hover .overley {
+    color: rgb(233, 208, 69) ;
+    font-weight: bolder;
+    transition: 1s all ease-in-out;
+    opacity: 0.4;
+}
+
+.overley {
+    height: 110%;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0.418);
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+  
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/*********************************************************************** main-section ********************************************************************/
+#tourses-main-section {
+    height: 850px;
+    width: 100%;
+}
+
+#tourses-main-section-2 {
+    width: 100%;
+    height: 600px;
+    background-image: url(/img/full-shot-travel-concept-with-landmarks.jpg);
+    background-attachment: fixed;
+    margin-top: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tourses-main-section-content {
+    background-color: #e0e0e0;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px;
+    background-color: #e0e0e0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0 0 15px;
+}
+
+.img_container {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    position: relative;
+}
+
+.img_container:hover .overleys {
+    transition: 1s all ease-in-out;
+    opacity: 0.4;
+    color: black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.details {
+    padding: 15px;
+}
+
+/* ***********************************************footer************************************************************************************** */
+footer {
+    background-color: #09080a;
+    color: white;
+    width: 100%;
+}
+
+.pheraps {
+    display: flex;
+    gap: 30px;
+    margin: 30px 10px 30px 10px;
+    justify-content: space-between;
+}
+
+.pheraps p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.pheraps h3 {
+    font-family: 'baloo bhai 2';
+    font-size: 1.8rem;
+    color: #45f3ff;
+}
+
+.about {
+    width: 65%;
+}
+
+.links {
+    display: block;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.links a:hover {
+    color: orange;
+}
+
+.contact a {
+    font-size: 1.1rem;
+    color: rgb(210, 149, 37);
+}
+
+.contact a:hover {
+    color: rgb(222, 75, 48);
+}
+
+.container-fluid {
+    padding-bottom: 10px;
+    border: 2px solid black;
+}
+
+span a {
+    color: orange;
+}
+
+span a:hover {
+    color: orange;
+}
+
+/*********************************************************************** media queries **************************************************************************/
+
+@media (min-width:1250px) {
+    .div-main {
+        max-width: 250px;
+        max-height: 210px;
+        height: 100%;
+        width: 100%;
+        margin: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    .h1-div h1 {
+        font-size: 50px;
+    }
+    #tourses-main-section {
+        height: 1000px;
+    }
+    #tourses-main-section-2 {
+        height: 790px;
+        width: 100%;
+    }
+}
+
+@media (max-width:1250px) and (min-width:1080px) {
+    .div-main {
+        max-width: 250px;
+        max-height: 210px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    .h1-div h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:1080px) and (min-width:880px) {
+    .div-main {
+        max-width: 230px;
+        max-height: 190px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 30px;
+        margin-left: 40px;
+    }
+
+    .h1-div h1 {
+        font-size: 35px;
+    }
+
+    #tourses-main-section {
+        height: 800px;
+    }
+
+    #tourses-main-section-2 {
+        height: 590px;
+    }
+}
+
+@media (max-width:880px) and (min-width:700px) {
+    .div-main {
+        max-width: 300px;
+        max-height: 200px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+    }
+
+    .h1-div h1 {
+        font-size: 30px;
+    }
+
+    #tourses-main-section {
+        height: 600px;
+    }
+
+    #tourses-main-section-2 {
+        height: 500px;
+    }
+
+
+}
+
+@media (max-width:700px) and (min-width:500px) {
+    .div-main {
+        max-width: 300px;
+        max-height: 200px;
+        height: 100%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 20px
+    }
+
+    .container {
+        gap: 30px;
+        /* flex-wrap: wrap; */
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        /* margin: 40px; */
+    }
+
+    .h1-div h1 {
+        font-size: 30px;
+    }
+
+    #tourses-main-section {
+        height: 500px;
+    }
+
+    #tourses-main-section-2 {
+        height: 400px;
+    }
+
+    #navbar-toggle {
+        display: block;
+        border-radius: 7px;
+
+    }
+
+    #navbar-div {
+        display: none;
+    }
+
+    #navbar ul li {
+        font-size: 1.5rem;
+    }
+
+    #navbar ul {
+        display: grid;
+    }
+
+    #navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar-toggle img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .pheraps {
+        display: block;
+        margin-left: 5px;
+        padding-left: 25px;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .contact {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:500px) and (min-width:280px) {
+    .div-main {
+        max-width: 300px;
+        max-height: 200px;
+        height: 100%;
+        width: 100%;
+        left: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 30px;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+
+    .h1-div h1 {
+        font-size: 30px;
+    }
+
+    #tourses-main-section {
+        height: 370px;
+    }
+
+    #tourses-main-section-2 {
+        height: 300px;
+    }
+
+    #navbar-toggle {
+        display: block;
+        border-radius: 7px;
+
+    }
+
+    #navbar-div {
+        display: none;
+    }
+
+    #navbar ul li {
+        font-size: 1.5rem;
+    }
+
+    #navbar ul {
+        display: grid;
+    }
+
+    #navbar {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar-toggle img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .pheraps {
+        display: block;
+        margin-left: 5px;
+        padding-left: 25px;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .contact {
+        padding-top: 20px;
+    }
+}
