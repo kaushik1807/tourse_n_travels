@@ -76,16 +76,15 @@
     .mcontainer {
       top: 50%;
       left: 50%;
-      margin: auto;
-      margin-top: 80px;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
+      /* margin: auto;
+      margin-top: 80px; */
       width: 540px;
       box-shadow: 0 0 5px;
       border-radius: 7px;
-      padding: 20px;
+      padding: 10px 30px;
       background-color: #fff;
+      max-width: 1240px;
+      margin: 80px auto 0px auto;
     }
     .mcontainer:hover {
    
@@ -330,7 +329,7 @@ span a:hover{
       $("#navbar-toggle").click(function () {
         var div = $("#navbar-div");
 
-        div.animate({ height: "toggle" }, "slow");
+        div.animate({ height: "toggle" }, 300);
       });
     });
     function check_payment(){

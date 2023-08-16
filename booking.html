@@ -65,7 +65,9 @@
     }
 
     .container {
-      margin-top: 80px;
+      /* margin-top: 80px; */
+      max-width: 1240px;
+      margin: 60px auto 0px auto;
     }
 
     .mcontainer {
@@ -170,7 +172,7 @@ span a:hover{
       .mcontainer {
         width: 400px;
         display: block;
-        padding-right: 30px;
+        padding: 10px 35px;
       }
 
       #navbar-toggle {
@@ -349,7 +351,7 @@ span a:hover{
   $(document).ready(() => {
     $("#navbar-toggle").click(function () {
       var div = $("#navbar-div");
-      div.animate({ height: "toggle" }, "slow");
+      div.animate({ height: "toggle" }, 300);
     });
   });
 </script>

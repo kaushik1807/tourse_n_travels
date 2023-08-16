@@ -160,7 +160,7 @@ section {
 main {
     background-color: rgb(55, 52, 52);
     /* border: 2px solid black; */
-    margin-top: 20px; 
+    /* margin-top: 20px;  */
     /* border-radius: 7px; */
     /* margin: 40px; */
     left: 0;
@@ -288,7 +288,7 @@ span a:hover{
     }
 
     #navbar ul li {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #navbar ul {
@@ -308,7 +308,9 @@ span a:hover{
         gap: 20px;
 
     }
-
+    .service-detail{
+      margin: 25px 4px;
+    }
     .container {
         height: 27vmin;
         width: calc(50% - 40px);
@@ -335,10 +337,9 @@ span a:hover{
     #navbar-toggle {
         display: block;
         border-radius: 7px;
-        margin-left: 310px;
+        /* margin-left: 310px; */
+       justify-content: end;
     }
-
-
     #navbar-div {
         display: none;
     }
@@ -557,7 +558,7 @@ span a:hover{
       $("#navbar-toggle").click(function () {
         var div = $("#navbar-div");
 
-        div.animate({ height: "toggle" }, "slow");
+        div.animate({ height: "toggle" }, 300);
       });
 
       $.ajax({
